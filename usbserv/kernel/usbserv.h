@@ -37,10 +37,10 @@ typedef enum SceUsbservErrorCode {
     SCE_USBSERV_ERROR_FATAL         = 0x802480FF
 } SceUsbservErrorCode;
 
-int ksceUsbServEtherEnable(); // 0x30AE5F66
-int ksceUsbServEtherDisable(); // 0xD787B191
-int ksceUsbServAccessoryActivate(); // AA6D4409
-int ksceUsbServAccessoryDeactivate(); // 0x853CB8E4
+int ksceUsbServEtherEnable(void); // 0x30AE5F66
+int ksceUsbServEtherDisable(void); // 0xD787B191
+int ksceUsbServAccessoryActivate(void); // AA6D4409
+int ksceUsbServAccessoryDeactivate(void); // 0x853CB8E4
 int ksceUsbServMacSelect(uint32_t usbPort, uint32_t clientMode); // 0x7AD36284
 SceBool ksceUsbServMacGet(uint32_t usbPort); // 0xF0553A69
 
