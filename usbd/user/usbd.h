@@ -238,7 +238,7 @@ typedef struct SceUsbdIsochTransferStatus {
     uint32_t unk1; // unused
     uintptr_t* unk2; // ret up to 0x28 buff. 10 * 4 bytes. or 8*5 bytes
     uint32_t unk3; // ret 4. ptr?
-} SceUsbdTransferStatus;
+} SceUsbdIsochTransferStatus;
 
 int sceUsbdGetTransferStatus(SceUID uid, SceUsbdTransferStatus* status);
 
@@ -289,7 +289,7 @@ typedef struct SceUsbdAttachCompositeParam {
     uint32_t device;
     uint32_t unk3; // num devices?
     uint32_t unk4;
-} SceUsbdAttachCompisiteParam; /* size = 0x14 */
+} SceUsbdAttachCompositeParam; /* size = 0x14 */
 
 int sceUsbdAttachCompositeLdd(SceUID, SceUsbdAttachCompositeParam* param);
 
